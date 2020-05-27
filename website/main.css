@@ -162,3 +162,8 @@ nav.nav-links {
     display: block;
     font-weight: 700;
 }
+
+.footer-text {
+    margin: 2em 0;
+    text-align: center;
+}
