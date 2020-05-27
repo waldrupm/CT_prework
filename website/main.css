@@ -34,6 +34,46 @@ header {
     box-sizing: border-box;
 }
 
+section {
+    margin-top: 2em;
+}
+
+h1 {
+    font-size: 3.052em;
+}
+
+h2 {
+    font-size: 2.441em;
+}
+
+button {
+    padding: 0.75em;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+input {
+    border-radius: 5px;
+    color: #363636;
+    border-color: #888;
+    max-width: 100%;
+    width: 100%;
+    height: 2.25rem;
+    padding: 0 1em;
+    margin-bottom: 1em;
+}
+
+textarea {
+    border-radius: 5px;
+    color: #363636;
+    border: 2px solid #888;
+    max-width: 100%;
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
 nav.nav-links {
     display: inline-block;
     margin-left: auto;
@@ -68,16 +108,57 @@ nav.nav-links {
 }
 
 .hero-container {
-    display: grid;
     height: 450px;
+}
+
+.half-grid {
+    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
 }
 
+.two-third-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 5px;
+}
+
+.thirds-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
 .hero-left {
-    background-color: #999;
+    background-color: #ccc;
 }
 
 .hero-right {
-    background-color: #ff0;
+    background-color: rgb(218, 156, 64);
+}
+
+.photo {
+    text-align: center;
+}
+
+.my-photo {
+    max-width: 222px;
+    border: 1px solid #ccc;
+    margin-top: 4.5em;
+}
+
+.about .container p {
+    margin-bottom: 1em;
+    max-width: 600px;
+}
+
+.contact-form {
+    grid-column: 2 / 3;
+}
+
+.form-label {
+    margin-bottom: 0.2em;
+    color: #333;
+    display: block;
+    font-weight: 700;
 }
